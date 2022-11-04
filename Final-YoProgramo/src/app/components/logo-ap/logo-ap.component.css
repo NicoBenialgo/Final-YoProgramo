@@ -1,3 +1,8 @@
 #logo-AP{
-    width: 150px;
+    width: 250px;
+    filter:grayscale(0%);
+}
+
+#logo-AP:hover{
+    filter:grayscale(100%);
 }

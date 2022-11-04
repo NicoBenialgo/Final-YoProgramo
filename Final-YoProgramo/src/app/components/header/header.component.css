@@ -1,5 +1,11 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 div{
-    background-color: #000;
+    background-color: #B3E7EF;
 }
 
 app-social {
