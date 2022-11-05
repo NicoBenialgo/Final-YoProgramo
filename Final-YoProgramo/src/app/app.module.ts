@@ -36,18 +36,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     provide: ROUND_PROGRESS_DEFAULTS,
     useValue: {
       color: '#f00',
-      background: '#0f0',
-      current: '50',
-      max: '100',
-      radius: '125',
-      stroke: '20',
-      semicircle: 'true',
-      rounded: 'true',
-      clockwise: 'false',
-      responsive: 'false',
-      duration: '800',
-      animation: 'easeInOutQuart',
-      animationDelay: '0'
+      background: '#0f0'
     }
   }],
   bootstrap: [AppComponent]
