@@ -1,4 +1,6 @@
 #logo-AP{
+    display:flex;
+    align-items:center;
     width: 250px;
     filter:grayscale(0%);
 }

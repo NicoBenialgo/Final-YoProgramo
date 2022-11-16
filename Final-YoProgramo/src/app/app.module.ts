@@ -13,6 +13,8 @@ import { HistoriaLaboralComponent } from './components/historia-laboral/historia
 import { HistoriaEducacionComponent } from './components/historia-educacion/historia-educacion.component';
 import { RoundProgressModule, ROUND_PROGRESS_DEFAULTS } from 'angular-svg-round-progressbar';
 import { SkillsComponent } from './components/skills/skills.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SkillsComponent } from './components/skills/skills.component';
     LoginComponent,
     HistoriaLaboralComponent,
     HistoriaEducacionComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
