@@ -1,0 +1,125 @@
+body {
+    font-family: 'Encode Sans', Helvetica, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+section {
+    background: rgba(39, 5, 43,1);
+    background: -moz-linear-gradient(45deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
+    background: -webkit-linear-gradient(45deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
+    background: linear-gradient(45deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27052b",endColorstr="#4b0922",GradientType=1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.3vw;
+    padding-top: 7px;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+h4 {
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+}
+
+.progress-bar {
+    display: flex;
+}
+
+.progress-design {
+    width: 300px;
+    height: 20px;
+    background-color: rgba(254,254,254,.5);
+    border-radius: 10px;
+    box-shadow: 4px 25px 50px rgba(0,0,0,.1)
+}
+
+.progress-percent {
+    width: var(--w);
+    height: 20px;
+    background-color: rgba(255, 255, 140,1);
+    border-radius: 10px;
+    animation: fill-bar 5s ease;
+}
+
+@keyframes fill-bar {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: var(--w);
+    }
+}
+
+.progress-logo {
+    width: 64px;
+}
+
+.container-img {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.container-info {
+    display: flex;
+}
+
+.progress-design,.progress-percent {
+    display:flex;
+    justify-content:flex-start;
+}
+
+.container-img,.container-info {
+    display: inline-block;
+}
+
+@media (max-width:767px){
+    /* menores a 768px */
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .progress-bar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 5.5vw;
+    }
+    h3 {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 4.4vw;
+    }
+    .container-info h4,.progress-bar h4 {
+        font-size: 3.5vw;
+    }
+}

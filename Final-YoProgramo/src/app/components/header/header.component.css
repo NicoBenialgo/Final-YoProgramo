@@ -1,14 +1,112 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
+/**** APLICABLE A TODO EL HEADER ****/
+body {
+    font-family: 'Encode Sans', Helvetica, sans-serif;
     margin: 0;
 }
 
-div{
-    background-color: #B3E7EF;
+header {
+    display: flex;
+    min-height: 50px;
+    background-color: #4b0922;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
-app-social {
-    margin-top: 25px;
-    float: right;
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    border-radius: 1rem;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+/**** LOGO de Argentina Programa ****/
+
+#logo-img {
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow:hidden;
+}
+
+/**** BOTONES DE REDES SOCIALES ****/
+
+.nav-link{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-login {
+    cursor: pointer;
+    margin-left: 70px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    outline: 2px solid white;
+    border: 1px solid white;
+}
+
+.nav-login:hover {
+    color: #4b0922;
+}
+
+.nav-login:active {
+    background-color: #4b0922;
+    color: white;
+    outline: 2px solid white;
+}
+
+nav a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+@media (max-width:649px) {
+    header {
+        flex-direction: column;
+        padding: 15px 0px;
+    }
+
+    #logo-img {
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    /**** DISEÑOS DE ACCESO A REDES ****/
+    .nav-login{
+        display: block;
+        background-color: #fff;
+        border-radius: 1.5rem;
+    }
+    .nav-link{
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .nav-login {
+        margin: 0 auto;
+    }
+    .social a {
+        display: inline-block;
+        border-radius: 1rem;
+    }
 }

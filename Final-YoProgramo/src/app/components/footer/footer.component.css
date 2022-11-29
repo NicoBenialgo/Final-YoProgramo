@@ -1,7 +1,30 @@
-p {
-    color: #fff;
+body {
+    font-family: 'Encode Sans', Helvetica, sans-serif;
+    margin: 0;
 }
 
-.row {
-    background-color: #333;
+footer {
+    display: flex;
+    min-height: 100px;
+    background-color: #353535;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: 5% auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 80px;
 }
