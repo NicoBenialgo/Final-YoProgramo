@@ -1,14 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Encode Sans', Helvetica, sans-serif;
-    margin: 0;
     color: white;
 }
 
 section {
     background: rgba(39, 5, 43,1);
-    background: -moz-linear-gradient(45deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
-    background: -webkit-linear-gradient(45deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
-    background: linear-gradient(45deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
+    background: -moz-linear-gradient(0deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
+    background: -webkit-linear-gradient(0deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
+    background: linear-gradient(0deg, rgba(39, 5, 43,1) 25%, rgba(75, 9, 34,1) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#27052b",endColorstr="#4b0922",GradientType=1);
 }
 
@@ -39,7 +44,7 @@ h4 {
     text-align: left;
 }
 
-.progress-bar {
+.progress-bar,.container-info {
     display: flex;
 }
 
@@ -77,10 +82,6 @@ h4 {
     justify-content:flex-end;
 }
 
-.container-info {
-    display: flex;
-}
-
 .progress-design,.progress-percent {
     display:flex;
     justify-content:flex-start;
@@ -88,6 +89,14 @@ h4 {
 
 .container-img,.container-info {
     display: inline-block;
+}
+
+.progress-bar-soft {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-bottom: 20px;
 }
 
 @media (max-width:767px){
@@ -98,11 +107,12 @@ h4 {
         flex-direction: column;
     }
 
-    .progress-bar {
+    .progress-bar,.progress-bar-soft {
         display: flex;
         align-items: center;
         flex-direction: column;
         max-width: 80%;
+        padding-left: 0;
     }
 
     h2 {
@@ -119,7 +129,7 @@ h4 {
         padding-bottom: 10px;
         font-size: 4.4vw;
     }
-    .container-info h4,.progress-bar h4 {
+    h4 {
         font-size: 3.5vw;
     }
 }

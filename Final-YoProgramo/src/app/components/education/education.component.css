@@ -7,11 +7,15 @@
 body{
     font-family: 'Encode Sans', Helvetica, sans-serif;
     padding-top: 20px;
+    color: white;
 }
 
 section {
-    color: #ccc;
-    background-color: rgb(92, 5, 73);
+    background: rgba(39, 5, 43,1);
+    background: -moz-linear-gradient(0deg, rgba(75, 9, 34,1) 25%, rgba(39, 5, 43,1) 75%);
+    background: -webkit-linear-gradient(0deg, rgba(75, 9, 34,1) 25%, rgba(39, 5, 43,1) 75%);
+    background: linear-gradient(0deg, rgba(75, 9, 34,1) 25%, rgba(39, 5, 43,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4b0922",endColorstr="#27052b",GradientType=1);
 }
 
 h2 {
@@ -20,6 +24,7 @@ h2 {
     font-size: 3vw;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: white;
 }
 
 .row {
@@ -29,8 +34,6 @@ h2 {
 
 .row div{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     flex-basis: 75%;
     border-radius: 2px;
     margin: 2%;
@@ -40,23 +43,20 @@ h2 {
     color: #eee;
 }
 
-ul li{
-    font-size: 26px;
-    font-weight: bold;
-}
-
-.row div p {
-    font-size: 20px;
+.row div ul p {
+    font-size: 15px;
     font-style: italic;
+    padding-left:1rem;
 }
 
-@media (min-width:768px){
-    /* mayores a 768px */
-    .row div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+ul {
+    list-style-image:url("../../../assets/point-ul-li.png");
+    list-style-position:inside;
+}
+
+ul li{
+    font-size: 20px;
+    padding: 3%;
 }
 
 @media (max-width:767px){
