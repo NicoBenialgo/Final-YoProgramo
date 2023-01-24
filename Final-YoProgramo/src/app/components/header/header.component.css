@@ -7,11 +7,12 @@ body {
 header {
     display: flex;
     min-height: 50px;
-    background-color: #4b0922;
-    color: white;
+    background-color: #fcf5f6;
+    color: black;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    box-shadow: 0 14px 20px 0 rgba(105, 105, 105, 0.5), 0 18px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -21,7 +22,7 @@ header {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav {
@@ -47,31 +48,40 @@ nav {
     border-radius: 50%;
 }
 
+
 .nav-login {
     cursor: pointer;
     margin-left: 70px;
     margin-right: 10px;
     font-size: 20px;
-    background-color: #fff;
+    background-color: #222;
     border-radius: 30px;
     padding: 10px;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
-.nav-link:hover {
-    outline: 2px solid white;
-    border: 1px solid white;
+nav>a>img {
+    filter: grayscale(0);
+    outline: 2px solid rgb(105, 105, 105);
+}
+
+nav>a>img:hover {
+    outline: 3px solid black;
+    border: 2px solid black;
+    filter: grayscale(1);
+    transition-property: filter,outline;
+    transition-duration: .5s;
 }
 
 .nav-login:hover {
-    color: #4b0922;
+    color: #b1436d;
 }
 
 .nav-login:active {
-    background-color: #4b0922;
-    color: white;
-    outline: 2px solid white;
+    background-color: #b1436d;
+    color: black;
+    outline: 2px solid black;
 }
 
 nav a {
@@ -93,7 +103,7 @@ nav a {
     /**** DISEÑOS DE ACCESO A REDES ****/
     .nav-login{
         display: block;
-        background-color: #fff;
+        background-color: #222;
         border-radius: 1.5rem;
     }
     .nav-link{
